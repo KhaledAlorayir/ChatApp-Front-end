@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 
 const Chat = () => {
   const { name, room } = useSelector((state) => state.chat);
-  const ENDPOINT = "localhost:5000";
+  const ENDPOINT = "https://chatapp-sa-api.herokuapp.com";
   const Socket = useRef(io(ENDPOINT));
 
   const [Messages, setMessages] = useState([]);
