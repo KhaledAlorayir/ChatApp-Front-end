@@ -17,6 +17,9 @@ const Join = () => {
     if (InputValue.name.trim() === "" || InputValue.room.trim() === "")
       return alert("Please enter all values!");
 
+    if (InputValue.name.length > 10)
+      return alert("the name should be less than 11 characters");
+
     dispatch({ type: "SET", payload: InputValue });
     Navigate("/chat");
   };
