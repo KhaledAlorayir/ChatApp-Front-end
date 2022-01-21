@@ -10,7 +10,7 @@ const MessagesContainer = ({ Messages, name }) => {
   }, [Messages]);
 
   return (
-    <div className="bg-slate-50 w-5/6 overflow-y-auto">
+    <div className="bg-slate-50 w-5/6 overflow-y-auto text-sm md:text-base">
       {Messages.map((m, i) => (
         <Message key={i} m={m} isMe={Parsed === m.user} />
       ))}

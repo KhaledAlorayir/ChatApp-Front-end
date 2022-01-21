@@ -48,8 +48,8 @@ const Chat = () => {
   };
 
   return (
-    <div className="flex h-full justify-center items-center bg-gray-600">
-      <div className="bg-gray-800 h-3/4 w-5/6 2xl:w-1/2 flex flex-col">
+    <div className="flex h-full py-2 px-3 md:p-0 md:justify-center items-center bg-gray-600">
+      <div className="bg-gray-800  w-full h-full md:w-5/6 md:h-3/4 2xl:w-1/2 flex flex-col">
         <Bar room={room} name={name} />
         <div className="flex-1 flex overflow-hidden">
           <MessagesContainer Messages={Messages} name={name} />
